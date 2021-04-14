@@ -1,0 +1,11 @@
+-No flip-flop D, quando o CLRN estiver zerado, a saída sempre será zero. Quando estiver setado, a saída
+é igual à entrada.
+-S1, S0, ENABLE_WRITE, A0, A1, B0, B1, MBSelect, ALU0, ALU1, Cin, MDSelect, endereco[3..0](dados),
+endereco[4..0](pc), write(dados), read(dados)  Vêm do decodificador
+-Para as funções LOAD e STORE, o valor da memória vem do assembler (direto do código de máquina), enquanto o
+valor salvo / carregado virá do multiplexador A.
+
+
+
+----------------PERGUNTAS------------------
+-O clear não é ativado pela borda

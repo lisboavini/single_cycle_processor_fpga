@@ -1,0 +1,7 @@
+// Registrador 4 bits
+module Registrador_4(
+input logic clock, enable, clear,
+input logic [3:0]
+);
+
+endmodule

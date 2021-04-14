@@ -1,0 +1,9 @@
+//Memoria de dados 16x4 bits.
+module Dados_16x4(
+input logic endereco[3:0],
+input logic write, read,
+inout logic dado[3:0]
+);
+
+logic [3:0] RAM [16:0];
+

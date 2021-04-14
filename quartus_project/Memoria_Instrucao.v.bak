@@ -1,0 +1,7 @@
+//Memória de Instrucao 20x10 Bits
+module RAM_20x10
+(input logic read, write;
+input logic [19:0] endereco;
+
+)
+logic [0:7] Memoria_Instrucao [0:19];

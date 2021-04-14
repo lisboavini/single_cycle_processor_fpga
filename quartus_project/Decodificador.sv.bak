@@ -1,0 +1,5 @@
+// Decodificador
+module Decodificador(
+input logic [9:0] codigo_maquina,
+
+);

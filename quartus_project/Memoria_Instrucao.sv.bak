@@ -1,0 +1,3 @@
+//Memória de Instrução: 20x10 Bits
+
+logic [0:7] Memoria_Instrucao [0:19]
