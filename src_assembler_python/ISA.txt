@@ -17,7 +17,7 @@
 • ADDi - Soma o valor do dado ao valor de um registrador
   OPCODE:   00010
 
-  PASSING EXAMPLE: ADDi R0,IM -> R0 = R0 + IM -> 00010 | xxxxx | R0 | IM of 4 bits | -----------------------------
+  PASSING EXAMPLE: ADDi R0,R1,IM -> R0 = R1 + IM -> 00010 | xx | R0 | R1 | IM of 4 bits | -----------------------------
   OBS:(imeadiates should be writen by the user as decimal)
   IMEDIATES HAVE 4 BITS and the assembler should pass the imeddiate as a binnary of 4 bits
 
@@ -25,7 +25,7 @@
 • SUBi - Subtrai o valor do dado ao valor de um registrador
   OPCODE:   00011
 
-  PASSING EXAMPLE: SUBi R0,IM -> R0 = R0 - IM -> 00011 | xxxxx | R0 | IM of 4 bits | -----------------------------
+  PASSING EXAMPLE: SUBi R0,R1,IM -> R0 = R1 - IM -> 00011 | xx | R0 | R1 | IM of 4 bits | -----------------------------
   IMEDIATES HAVE 4 BITS
 
 
