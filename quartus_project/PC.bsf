@@ -47,15 +47,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "salto[4..0]" (rect 0 0 38 12)(font "Arial" ))
-		(text "salto[4..0]" (rect 21 75 59 87)(font "Arial" ))
+		(text "salto[5..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "salto[5..0]" (rect 21 75 58 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 240 32)
 		(output)
-		(text "endereco_instrucao[4..0]" (rect 0 0 99 12)(font "Arial" ))
-		(text "endereco_instrucao[4..0]" (rect 120 27 219 39)(font "Arial" ))
+		(text "endereco_instrucao[5..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "endereco_instrucao[5..0]" (rect 122 27 219 39)(font "Arial" ))
 		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
 	(port
