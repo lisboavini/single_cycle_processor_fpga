@@ -1,15 +1,15 @@
 //Program Counting
 module PC(
-output logic [4:0]endereco_instrucao,
+output logic [5:0]endereco_instrucao,
 input logic clock, write, clear,
-input logic [4:0]salto,
+input logic [5:0]salto,
 output logic write_memoria
 );
 
-logic [4:0] endereco;
+logic [5:0] endereco;
 logic auxiliar;
-logic [4:0] auxiliar2;
-initial endereco = 5'b00000;
+logic [5:0] auxiliar2;
+initial endereco = 6'b000000;
 
 
 
@@ -38,9 +38,9 @@ begin
 	begin
 		endereco_instrucao <= endereco;
 		endereco <= endereco +1;
-		if(endereco == 5'd19)
+		if(endereco == 6'd63)
 		begin
-		endereco <= 5'b00000;
+		endereco <= 6'b000000;
 		end
 	end
 end

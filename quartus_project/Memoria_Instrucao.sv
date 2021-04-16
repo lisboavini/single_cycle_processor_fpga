@@ -1,10 +1,10 @@
-//Memória de Instrucao 20x10 Bits
-module Instrucao_20x10(
-input logic [4:0] endereco,
-output logic [9:0] instrucao,
+//Memória de Instrucao 64x17 Bits
+module Instrucao_64x17(
+input logic [5:0] endereco,
+output logic [16:0] instrucao,
 input logic read
 );
-logic [9:0] RAM [19:0];
+logic [16:0] RAM [64:0];
 initial
 $readmemb("bin.txt", RAM);
 assign instrucao = RAM[endereco];

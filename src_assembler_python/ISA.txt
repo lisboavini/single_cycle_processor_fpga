@@ -101,7 +101,7 @@ instrução a ser executada (JMP dddddd)
 
 
 • LOADM – Carrega um dado da memória em um registrador
-  OPCODE:   01101
+  OPCODE:   01110
 
   PASSING EXAMPLE: LOAD R0,addr -> R0 = addr -> 01110 | R0 | addr of 4 bits | xxxxx | -----------------------------
   In this case the address has only 4 bits and the assembler passes the address as 4 bits
@@ -109,13 +109,16 @@ instrução a ser executada (JMP dddddd)
 
 
 • STOREM – Salva um dado de um registrador na memória
-  OPCODE:   01110
+  OPCODE:   01111
 
   PASSING EXAMPLE: STORE R0,addr -> R0 = addr -> 01111 | R0 | addr of 4 bits | xxxxx | -----------------------------
   In this case the address has only 4 bits and the assembler passes the address as 4 bits
   OBS:(addr should be writen as hexadecimal and has a range from 0x0 to 0xF)
 
 
-• SORTEIO
+• RIO - Read IO Escreve um conteúdo em um periférico
+  OPCODE: 10000
+
+  PASSING EXAMPLE: RIO R0 -> Read pheriperical value in register R0 -> 10000 | RO | xxxxxxxxx | ---------------
 
 

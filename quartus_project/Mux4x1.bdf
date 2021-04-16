@@ -119,7 +119,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 824 184 1000 200)
+	(rect 1064 360 1240 376)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "O[3..0]" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
@@ -360,6 +360,11 @@ applicable agreement for further details.
 	(pt 1024 464)
 )
 (connector
+	(pt 800 192)
+	(pt 1064 192)
+	(bus)
+)
+(connector
 	(pt 1024 -336)
 	(pt 1024 464)
 )
@@ -368,8 +373,8 @@ applicable agreement for further details.
 	(pt 984 448)
 )
 (connector
-	(pt 800 192)
-	(pt 824 192)
+	(pt 1064 192)
+	(pt 1064 368)
 	(bus)
 )
 (junction (pt 632 464))

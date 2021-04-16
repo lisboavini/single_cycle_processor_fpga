@@ -68,5 +68,9 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Daniel Ribeiro/Dropbox/UF/Arquitetura Avançada para Computação/Projeto01_Arquitetura_Avançada/Quartus_Project/Prova01.vwf"
+set_global_assignment -name BDF_FILE 8_bit_demux.bdf
+set_global_assignment -name BDF_FILE 8_4_bits_registers.bdf
+set_global_assignment -name BDF_FILE Mux8x1.bdf
+set_global_assignment -name BDF_FILE 8_3AND.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
