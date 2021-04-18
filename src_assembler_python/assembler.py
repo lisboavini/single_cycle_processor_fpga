@@ -4,8 +4,8 @@ Created on Sat Jul 13 15:37:01 2019
 
 @author: 
     daniel.ribeiro
-    filipe.souto
-    joao.holanda
+    marcos.melo
+    danrley.silva
 """
 
 #%% imports
