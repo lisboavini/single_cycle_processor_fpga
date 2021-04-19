@@ -1,13 +1,14 @@
-ADDi R0,1
-ADDi R1,2
-ADDi R2,3
-ADDi R3,4
-CLR R0
-CLR R1
-CLR R2
-CLR R3
-ADDi R0,1
-ADDi R1,2
-ADDi R2,3
-ADDi R3,4
+  ADDi     R0,  1
+ADDi  R1,  2
+ ADDi    R2,   3
+ADDi   R3,  4
+     CLR   R0
+CLR  R1
+CLR   R2
+CLR  R3
+ ADDi  R0,1
+ADDi  R1,2
+ADDi   R2,3
 RST
+SUBi  R6,4
+MOVI R3,4
