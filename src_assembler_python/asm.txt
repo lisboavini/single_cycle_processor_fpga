@@ -1,3 +1,5 @@
-jmp 0x08
-sub R0,R1,R2
+rio r0
+addi r1,r1,2
+clr r0
+jmp 0x00
 rst
