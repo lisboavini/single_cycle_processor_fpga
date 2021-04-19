@@ -26,15 +26,31 @@ def comp_reg(reg):
         return '{0:03b}'.format(2)
     if 'R3' in reg:
         return '{0:03b}'.format(3)
-    if 'R0' in reg:
+    if 'R4' in reg:
         return '{0:03b}'.format(4)
-    if 'R1' in reg:
+    if 'R5' in reg:
         return '{0:03b}'.format(5)
-    if 'R2' in reg:
+    if 'R6' in reg:
         return '{0:03b}'.format(6)
-    if 'R3' in reg:
+    if 'R7' in reg:
         return '{0:03b}'.format(7)
 
+def clean_lines(line):
+    '''
+    Receives a string with a line content and cleans format errors.
+    Returns a clean to assembler.
+    '''
+    line = line.upper() # convert lower chars to upper chars
+    while line[0] == ' ':
+        line = line[1:]
+    
+    while line.find('  ') > -1:
+        line = line.replace('  ',' ')
+    
+    if line.find(', ') > 0:
+        line = line.replace(', ', ',')
+
+    return line
 
 def create_output_binary(file_path):
     '''
@@ -45,15 +61,19 @@ def create_output_binary(file_path):
     try:
         with open(file_path,'r') as asm_file:
             for line in asm_file:
-                line = line.upper() # convert lower chars to upper chars
-                if line.count(' ') > 0: # checks line for spaces
-                    opcode = line.split()[0] # anything behind space is opcode
-                    data = line.split()[1] # anything after space is data
+                line_clear = clean_lines(line)
+                # broken lines in opcode and data: line_clear -> opcode + data
+                if line_clear.count(' ') > 0: # checks line for spaces
+                    opcode = line_clear.split()[0] # anything behind space is opcode
+                    data = line_clear.split()[1] # anything after space is data
+                    # split registrers from data string
                     if data.count(',') > 0: # checks data for commas
                         r0 = data.split(',')[0] # anything behind the first comma is r0       
                         r1 = data.split(',')[1] # anything after the first comma is r1
-                        if line.count(',') > 1: # checks for a second comma
+                        # verfying if exists an imediate or r2, imediates becomes a r2
+                        if line_clear.count(',') > 1: # checks for a second comma
                             r2 = data.split(',')[2] # anything after the second comma is r2
+                    # if has an instruction with a single register, clear cases
                     elif data == 'R0':
                         r0 = data
 
@@ -66,7 +86,7 @@ def create_output_binary(file_path):
                         output += comp_reg(r2) # register R2 bits
                         
                     elif opcode == 'SUB':
-                        output += '{0:05b}'.format(1) # opcode bits
+                        output += '{0:05b}'.format(1)
                         output += '{0:03b}'.format(0) # useless bits
                         output += comp_reg(r0)
                         output += comp_reg(r1)
@@ -77,7 +97,7 @@ def create_output_binary(file_path):
                         output += '{0:02b}'.format(0) # useless bits
                         output += comp_reg(r0)
                         output += comp_reg(r1)
-                        output += '{0:04b}'.format(int(r2))
+                        output += '{0:04b}'.format(int(r2)) # immediate in r2
                     
                     elif opcode == 'ADDI' and r1.count('R') == 0:
                         output += '{0:05b}'.format(2)
@@ -167,13 +187,21 @@ def create_output_binary(file_path):
                         output += '{0:05b}'.format(16)
                         output += comp_reg(r0)
                         output += '{0:09b}'.format(0) # useless bits
-                        
-                else:
-                    # RST
+
+                    elif opcode == 'MOVI':
+                        output += '{0:05b}'.format(17)
+                        output += comp_reg(r0)
+                        output += '{0:04b}'.format(int(r1))
+                        output += '{0:05b}'.format(0) # useless bits
+        
+                elif line_clear == 'RST\n':
                     output += '{0:05b}'.format(7)
                     output += '{0:012b}'.format(0) # useless bits
-
                 
+                # TODO modify initial if and create list of allowed words
+                #else:
+                #    raise Exception("This instruction: " + line_clear + " are not implemented, please check ISA for more information.")
+    
                 out_file.write(output + '\n') # blank line in the end of file
                 output = '' # clear output buffer
                 r0 = '' # clear register r0 buffer
@@ -181,14 +209,19 @@ def create_output_binary(file_path):
 
         out_file.close()
     
-        return "Well done! Successful assembly! You are good!"
+        return "\nASSEMBLER MESSAGE: Well done! Successful assembly! You are good, my fellow!"
 
+    # exception treatment
     except OSError:
-        print("\nError message: We have a problem oppenning your file, please verify path and file name and try again =)")
-    #except:
-    #    print ("\nError message: Assembly language can't be interpreted, please verify and be happy ;)")
+        error_msg = ("\nError message: We have a problem oppenning your file, please verify path and file name and try again =)\nbin.txt file will be blank...")
+        return error_msg
+    except TypeError:
+        error_msg = ("\nError message: Assembly language can't be interpreted, please verify the syntax and be happy ;)")
+        return error_msg
 
 #%% Section to open the input and output files   
 file_name = sys.argv[1]
 file_path = os.path.join(sys.path[0], file_name)
 msg = create_output_binary(file_path)
+print("\n---------------------------------------------------------------------------" + msg)
+print("---------------------------------------------------------------------------")
