@@ -6,7 +6,7 @@ input logic read
 );
 logic [16:0] RAM [64:0];
 initial
-$readmemb("bin.txt", RAM);
+$readmemb("C:/Users/Daniel Ribeiro/Documents/GitHub/single_cycle_processor_fpga/src_assembler_python/bin.txt", RAM);
 assign instrucao = RAM[endereco];
 /*
 always_comb
