@@ -65,7 +65,7 @@ instrução a ser executada (JMP dddddd)
   OPCODE:   01001
 
   PASSING EXAMPLE: JMP address -> JMP to addr  -> 01001 | 6 bits of address |  xxxxxx |  -----------------------------
-  ADDRESS is passed as 6 bits from assembler and the decoder reads only the last five bits.
+  ADDRESS is passed as 6 bits from assembler and the decoder reads the address bits.
 
   OBS:(addr should be writen as hexadecimal and has a range from 0x00 to 0x13)
 
@@ -81,7 +81,7 @@ instrução a ser executada (JMP dddddd)
   OPCODE:   01011
 
   PASSING EXAMPLE: JZ address -> JZ to addr  -> 01011 | 6 bits of address |  xxxxxx |  -----------------------------
-  ADDRESS is passed as 6 bits from assembler and the decoder reads only the last five bits.
+  ADDRESS is passed as 6 bits from assembler and the decoder reads the address bits.
 
   OBS:(addr should be writen as hexadecimal and has a range from 0x00 to 0x13)
   OBS1: in order to correctly accomplish the use of JZ command, the user has to necessarily use a
