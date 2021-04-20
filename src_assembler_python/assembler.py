@@ -194,7 +194,7 @@ def create_output_binary(file_path):
                         output += '{0:04b}'.format(int(r1))
                         output += '{0:05b}'.format(0) # useless bits
         
-                elif line_clear == 'RST\n':
+                elif line_clear == 'RST':
                     output += '{0:05b}'.format(7)
                     output += '{0:012b}'.format(0) # useless bits
                 
