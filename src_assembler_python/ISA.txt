@@ -128,5 +128,5 @@ instrução a ser executada (JMP dddddd)
 • MOVI - Move Imediate Copia um conteúdo imediato para um registrador
   OPCODE: 10001
 
-  PASSING EXAMPLE: MOV R0,IM -> R0 = IM -> 01000 | R0 | IM of 4 bits | xxxxx | -----------------------------
+  PASSING EXAMPLE: MOV R0,IM -> R0 = IM -> 01001 | R0 | IM of 4 bits | xxxxx | -----------------------------
 
