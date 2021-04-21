@@ -21,7 +21,7 @@
   OBS:(imeadiates should be writen by the user as decimal)
   IMEDIATES HAVE 4 BITS and the assembler should pass the imeddiate as a binnary of 4 bits
   
-  This operand can be use with a single register, like below:
+  This operand can be used with a single register, like below:
   ANOTHER EXAMPLE: ADDi R0,IM -> R0 = R0 + IM -> 00010 | xx | R0 | R0 | IM of 4 bits | -----------------------------
 
 • SUBi - Subtrai o valor do dado ao valor de um registrador
@@ -30,7 +30,7 @@
   PASSING EXAMPLE: SUBi R0,R1,IM -> R0 = R1 - IM -> 00011 | xx | R0 | R1 | IM of 4 bits | -----------------------------
   IMEDIATES HAVE 4 BITS
 
-  This operand can be use with a single register, like below:
+  This operand can be used with a single register, like below:
   ANOTHER EXAMPLE: SUBi R0,IM -> R0 = R0 - IM -> 00011 | xx | R0 | R0 | IM of 4 bits | -----------------------------
 
 • MUL2 - Multiplica o valor de um registrador por 2
@@ -71,7 +71,7 @@ instrução a ser executada (JMP dddddd)
   PASSING EXAMPLE: JMP address -> JMP to addr  -> 01001 | 6 bits of address |  xxxxxx |  -----------------------------
   ADDRESS is passed as 6 bits from assembler and the decoder reads the address bits.
 
-  OBS:(addr should be writen as hexadecimal and has a range from 0x00 to 0x13)
+  OBS:(addr should be writen as hexadecimal and has a range from 0x00 to 0x40)
 
 
 • CMP - Compara o conteúdo de dois registradores e atualiza os flags de status de acordo com o resultado (sem salvá-lo)
