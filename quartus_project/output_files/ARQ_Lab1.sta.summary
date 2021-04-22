@@ -2,92 +2,148 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'Clock14'
-Slack : -8.872
-TNS   : -157.502
-
 Type  : Slow Model Setup 'PC:inst16|endereco_instrucao[0]'
-Slack : -6.220
-TNS   : -80.816
+Slack : -4.236
+TNS   : -32.362
+
+Type  : Slow Model Setup 'PC:inst16|endereco_instrucao[1]'
+Slack : -3.910
+TNS   : -38.346
+
+Type  : Slow Model Setup 'Clock14'
+Slack : -2.359
+TNS   : -16.674
 
 Type  : Slow Model Setup 'Clock'
-Slack : -2.083
-TNS   : -11.638
-
-Type  : Slow Model Hold 'PC:inst16|endereco_instrucao[0]'
-Slack : -4.162
-TNS   : -39.472
+Slack : -1.959
+TNS   : -12.266
 
 Type  : Slow Model Hold 'Clock14'
-Slack : -3.085
-TNS   : -26.339
+Slack : -4.087
+TNS   : -31.910
+
+Type  : Slow Model Hold 'PC:inst16|endereco_instrucao[1]'
+Slack : -3.328
+TNS   : -26.280
+
+Type  : Slow Model Hold 'PC:inst16|endereco_instrucao[0]'
+Slack : -3.280
+TNS   : -24.444
 
 Type  : Slow Model Hold 'Clock'
-Slack : -0.020
-TNS   : -0.025
+Slack : -2.103
+TNS   : -3.781
+
+Type  : Slow Model Recovery 'PC:inst16|endereco_instrucao[1]'
+Slack : -1.176
+TNS   : -7.140
+
+Type  : Slow Model Recovery 'PC:inst16|endereco_instrucao[0]'
+Slack : -0.724
+TNS   : -3.524
 
 Type  : Slow Model Recovery 'Clock14'
-Slack : 0.456
+Slack : 0.374
 TNS   : 0.000
 
 Type  : Slow Model Removal 'Clock14'
-Slack : -2.088
-TNS   : -18.066
+Slack : -3.536
+TNS   : -28.188
 
-Type  : Slow Model Minimum Pulse Width 'Clock14'
-Slack : -1.380
-TNS   : -29.380
+Type  : Slow Model Removal 'PC:inst16|endereco_instrucao[1]'
+Slack : -3.028
+TNS   : -21.956
+
+Type  : Slow Model Removal 'PC:inst16|endereco_instrucao[0]'
+Slack : -2.980
+TNS   : -21.572
 
 Type  : Slow Model Minimum Pulse Width 'Clock'
 Slack : -1.380
 TNS   : -15.380
 
-Type  : Slow Model Minimum Pulse Width 'PC:inst16|endereco_instrucao[0]'
-Slack : -1.341
-TNS   : -46.986
+Type  : Slow Model Minimum Pulse Width 'Clock14'
+Slack : -1.222
+TNS   : -10.222
 
-Type  : Fast Model Setup 'Clock14'
-Slack : -3.631
-TNS   : -58.210
+Type  : Slow Model Minimum Pulse Width 'PC:inst16|endereco_instrucao[0]'
+Slack : -0.500
+TNS   : -8.000
+
+Type  : Slow Model Minimum Pulse Width 'PC:inst16|endereco_instrucao[1]'
+Slack : -0.500
+TNS   : -8.000
 
 Type  : Fast Model Setup 'PC:inst16|endereco_instrucao[0]'
-Slack : -2.874
-TNS   : -34.031
+Slack : -1.915
+TNS   : -10.569
+
+Type  : Fast Model Setup 'PC:inst16|endereco_instrucao[1]'
+Slack : -1.582
+TNS   : -15.096
+
+Type  : Fast Model Setup 'Clock14'
+Slack : -0.468
+TNS   : -2.435
 
 Type  : Fast Model Setup 'Clock'
-Slack : -0.419
-TNS   : -1.146
-
-Type  : Fast Model Hold 'PC:inst16|endereco_instrucao[0]'
-Slack : -2.115
-TNS   : -20.709
+Slack : -0.463
+TNS   : -1.098
 
 Type  : Fast Model Hold 'Clock14'
-Slack : -1.662
-TNS   : -16.673
+Slack : -2.315
+TNS   : -19.405
+
+Type  : Fast Model Hold 'PC:inst16|endereco_instrucao[1]'
+Slack : -1.941
+TNS   : -15.392
+
+Type  : Fast Model Hold 'PC:inst16|endereco_instrucao[0]'
+Slack : -1.908
+TNS   : -14.463
 
 Type  : Fast Model Hold 'Clock'
-Slack : -0.495
-TNS   : -0.495
+Slack : -1.408
+TNS   : -2.636
+
+Type  : Fast Model Recovery 'PC:inst16|endereco_instrucao[1]'
+Slack : -0.280
+TNS   : -1.120
+
+Type  : Fast Model Recovery 'PC:inst16|endereco_instrucao[0]'
+Slack : 0.187
+TNS   : 0.000
 
 Type  : Fast Model Recovery 'Clock14'
-Slack : 0.747
+Slack : 0.834
 TNS   : 0.000
 
 Type  : Fast Model Removal 'Clock14'
-Slack : -1.374
-TNS   : -14.211
+Slack : -2.054
+TNS   : -16.316
 
-Type  : Fast Model Minimum Pulse Width 'Clock14'
-Slack : -1.380
-TNS   : -29.380
+Type  : Fast Model Removal 'PC:inst16|endereco_instrucao[1]'
+Slack : -1.700
+TNS   : -12.444
+
+Type  : Fast Model Removal 'PC:inst16|endereco_instrucao[0]'
+Slack : -1.667
+TNS   : -12.180
 
 Type  : Fast Model Minimum Pulse Width 'Clock'
 Slack : -1.380
 TNS   : -15.380
 
+Type  : Fast Model Minimum Pulse Width 'Clock14'
+Slack : -1.222
+TNS   : -10.222
+
 Type  : Fast Model Minimum Pulse Width 'PC:inst16|endereco_instrucao[0]'
-Slack : -0.320
-TNS   : -9.822
+Slack : -0.500
+TNS   : -8.000
+
+Type  : Fast Model Minimum Pulse Width 'PC:inst16|endereco_instrucao[1]'
+Slack : -0.500
+TNS   : -8.000
 
 ------------------------------------------------------------

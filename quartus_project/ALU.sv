@@ -21,10 +21,10 @@ begin
 	end
 	else
 	begin
-		G <= A;
+		G <= B;
 	end
 end
-if(S0==1 & S1 == 0)
+if(S0==1 & S1 == 0 )
 begin
 	if(Cin)
 	begin
@@ -39,7 +39,7 @@ begin
 		end
 	end
 end
-if(S0==0 & S1 == 1)
+if(S0==0 & S1 == 1 )
 begin
 	if(Cin)
 	begin
@@ -58,7 +58,7 @@ begin
 		G <= A >> 1;
 	end
 end
-if(S1==1 & S0 ==1)
+if(S1==1 & S0 ==1 )
 begin
 	if(Cin)
 	begin

@@ -71,7 +71,7 @@ instrução a ser executada (JMP dddddd)
   PASSING EXAMPLE: JMP address -> JMP to addr  -> 01001 | 6 bits of address |  xxxxxx |  -----------------------------
   ADDRESS is passed as 6 bits from assembler and the decoder reads the address bits.
 
-  OBS:(addr should be writen as hexadecimal and has a range from 0x00 to 0x13)
+  OBS:(addr should be writen as hexadecimal and has a range from 0x00 to 0x40)
 
 
 • CMP - Compara o conteúdo de dois registradores e atualiza os flags de status de acordo com o resultado (sem salvá-lo)
@@ -128,5 +128,5 @@ instrução a ser executada (JMP dddddd)
 • MOVI - Move Imediate Copia um conteúdo imediato para um registrador
   OPCODE: 10001
 
-  PASSING EXAMPLE: MOV R0,IM -> R0 = IM -> 01000 | R0 | IM of 4 bits | xxxxx | -----------------------------
+  PASSING EXAMPLE: MOVi R0,IM -> R0 = IM -> 10001 | R0 | IM of 4 bits | xxxxx | -----------------------------
 

@@ -215,16 +215,16 @@ case(codigo_maquina2[16:12])
 	//Const_in <= codigo_maquina2[3:0];
 	end
 	
-	5'b01000:begin //MOv
+	5'b01000:begin //Mov
 	S0 <= codigo_maquina2[9];
 	S1 <= codigo_maquina2[10];
 	S2 <= codigo_maquina2[11];
-	A0 <= codigo_maquina2[6];
-	A1 <= codigo_maquina2[7];
-	A2 <= codigo_maquina2[8];
+	B0 <= codigo_maquina2[6];
+	B1 <= codigo_maquina2[7];
+	B2 <= codigo_maquina2[8];
 	//B0 <= codigo_maquina2[0];
 	//B1 <= codigo_maquina2[1];
-	Mux_Imediato <= 1;
+	Mux_Imediato <= 0;
 	ALU1 <= 0;
 	ALU0 <= 0;
 	Cin <= 0;
@@ -433,6 +433,31 @@ case(codigo_maquina2[16:12])
 	//endereco_dados <= codigo_maquina2[3:0];
 	//endereco_Salto <= codigo_maquina2[4:0];
 	//Const_in <= codigo_maquina2[3:0];
+	end
+
+   5'b10001:begin //Movi
+	S0 <= codigo_maquina2[9];
+	S1 <= codigo_maquina2[10];
+	S2 <= codigo_maquina2[11];
+//	B0 <= codigo_maquina2[6];
+//	B1 <= codigo_maquina2[7];
+//	B2 <= codigo_maquina2[8];
+	//B0 <= codigo_maquina2[0];
+	//B1 <= codigo_maquina2[1];
+	Mux_Imediato <= 1;
+	ALU1 <= 0;
+	ALU0 <= 0;
+	Cin <= 0;
+	Mux_Memoria <= 0;
+	externo <= 0;
+	Enable_Write <= 1;
+	clear <= 0;
+	Write_Pc <= 0;
+	Write_RAM <= 0;
+	Read_RAM <= 0;
+//	endereco_dados <= 4'b0000;
+//	endereco_Salto <= 5'b00000;
+	Const_in <= codigo_maquina2[8:5];
 	end
 endcase
 end
