@@ -14,6 +14,7 @@ Clock => PC:inst16.clock
 Cout <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 N <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Z <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Clear <= Decodificador:inst.clear
 Enderecoteste[0] <= PC:inst16.endereco_instrucao[0]
 Enderecoteste[1] <= PC:inst16.endereco_instrucao[1]
 Enderecoteste[2] <= PC:inst16.endereco_instrucao[2]

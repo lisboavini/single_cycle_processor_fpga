@@ -1,0 +1,7 @@
+addi r0,2
+storem r0,0x0
+loadm r1,0x0
+jmp 0x05 
+addi r1,10
+movi r2, 5
+rst

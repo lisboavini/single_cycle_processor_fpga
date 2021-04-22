@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/19/2021 17:39:52"
+// Generated on "04/22/2021 18:14:35"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    ARQ_Lab1
 // 
@@ -107,11 +107,13 @@ reg [3:0] R2_prev;
 reg  Write_Enable_prev;
 reg  Z_prev;
 
+reg [5:0] Enderecoteste_expected_prev;
 reg [16:0] Instrucao_expected_prev;
 reg [3:0] R0_expected_prev;
 reg [3:0] R1_expected_prev;
 reg [3:0] R2_expected_prev;
 
+reg [5:0] last_Enderecoteste_exp;
 reg [16:0] last_Instrucao_exp;
 reg [3:0] last_R0_exp;
 reg [3:0] last_R1_exp;
@@ -152,6 +154,7 @@ end
 
 always @(trigger)
 begin
+	Enderecoteste_expected_prev = Enderecoteste_expected;
 	Instrucao_expected_prev = Instrucao_expected;
 	R0_expected_prev = R0_expected;
 	R1_expected_prev = R1_expected;
@@ -333,6 +336,36 @@ begin
 	R2_expected[0] = 1'bX;
 	R2_expected[0] = #999000 1'b0;
 end 
+// expected Enderecoteste[ 5 ]
+initial
+begin
+	Enderecoteste_expected[5] = 1'bX;
+end 
+// expected Enderecoteste[ 4 ]
+initial
+begin
+	Enderecoteste_expected[4] = 1'bX;
+end 
+// expected Enderecoteste[ 3 ]
+initial
+begin
+	Enderecoteste_expected[3] = 1'bX;
+end 
+// expected Enderecoteste[ 2 ]
+initial
+begin
+	Enderecoteste_expected[2] = 1'bX;
+end 
+// expected Enderecoteste[ 1 ]
+initial
+begin
+	Enderecoteste_expected[1] = 1'bX;
+end 
+// expected Enderecoteste[ 0 ]
+initial
+begin
+	Enderecoteste_expected[0] = 1'bX;
+end 
 // generate trigger
 always @(Cout_expected or Cout or Enderecoteste_expected or Enderecoteste or Instrucao_expected or Instrucao or N_expected or N or R0_expected or R0 or R1_expected or R1 or R2_expected or R2 or Write_Enable_expected or Write_Enable or Z_expected or Z)
 begin
@@ -347,6 +380,84 @@ begin
 	$display("| expected Cout = %b | expected Enderecoteste = %b | expected Instrucao = %b | expected N = %b | expected R0 = %b | expected R1 = %b | expected R2 = %b | expected Write_Enable = %b | expected Z = %b | ",Cout_expected_prev,Enderecoteste_expected_prev,Instrucao_expected_prev,N_expected_prev,R0_expected_prev,R1_expected_prev,R2_expected_prev,Write_Enable_expected_prev,Z_expected_prev);
 	$display("| real Cout = %b | real Enderecoteste = %b | real Instrucao = %b | real N = %b | real R0 = %b | real R1 = %b | real R2 = %b | real Write_Enable = %b | real Z = %b | ",Cout_prev,Enderecoteste_prev,Instrucao_prev,N_prev,R0_prev,R1_prev,R2_prev,Write_Enable_prev,Z_prev);
 `endif
+	if (
+		( Enderecoteste_expected_prev[0] !== 1'bx ) && ( Enderecoteste_prev[0] !== Enderecoteste_expected_prev[0] )
+		&& ((Enderecoteste_expected_prev[0] !== last_Enderecoteste_exp[0]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Enderecoteste[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Enderecoteste_expected_prev);
+		$display ("     Real value = %b", Enderecoteste_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Enderecoteste_exp[0] = Enderecoteste_expected_prev[0];
+	end
+	if (
+		( Enderecoteste_expected_prev[1] !== 1'bx ) && ( Enderecoteste_prev[1] !== Enderecoteste_expected_prev[1] )
+		&& ((Enderecoteste_expected_prev[1] !== last_Enderecoteste_exp[1]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Enderecoteste[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Enderecoteste_expected_prev);
+		$display ("     Real value = %b", Enderecoteste_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Enderecoteste_exp[1] = Enderecoteste_expected_prev[1];
+	end
+	if (
+		( Enderecoteste_expected_prev[2] !== 1'bx ) && ( Enderecoteste_prev[2] !== Enderecoteste_expected_prev[2] )
+		&& ((Enderecoteste_expected_prev[2] !== last_Enderecoteste_exp[2]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Enderecoteste[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Enderecoteste_expected_prev);
+		$display ("     Real value = %b", Enderecoteste_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Enderecoteste_exp[2] = Enderecoteste_expected_prev[2];
+	end
+	if (
+		( Enderecoteste_expected_prev[3] !== 1'bx ) && ( Enderecoteste_prev[3] !== Enderecoteste_expected_prev[3] )
+		&& ((Enderecoteste_expected_prev[3] !== last_Enderecoteste_exp[3]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Enderecoteste[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Enderecoteste_expected_prev);
+		$display ("     Real value = %b", Enderecoteste_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Enderecoteste_exp[3] = Enderecoteste_expected_prev[3];
+	end
+	if (
+		( Enderecoteste_expected_prev[4] !== 1'bx ) && ( Enderecoteste_prev[4] !== Enderecoteste_expected_prev[4] )
+		&& ((Enderecoteste_expected_prev[4] !== last_Enderecoteste_exp[4]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Enderecoteste[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Enderecoteste_expected_prev);
+		$display ("     Real value = %b", Enderecoteste_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Enderecoteste_exp[4] = Enderecoteste_expected_prev[4];
+	end
+	if (
+		( Enderecoteste_expected_prev[5] !== 1'bx ) && ( Enderecoteste_prev[5] !== Enderecoteste_expected_prev[5] )
+		&& ((Enderecoteste_expected_prev[5] !== last_Enderecoteste_exp[5]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Enderecoteste[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Enderecoteste_expected_prev);
+		$display ("     Real value = %b", Enderecoteste_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Enderecoteste_exp[5] = Enderecoteste_expected_prev[5];
+	end
 	if (
 		( Instrucao_expected_prev[0] !== 1'bx ) && ( Instrucao_prev[0] !== Instrucao_expected_prev[0] )
 		&& ((Instrucao_expected_prev[0] !== last_Instrucao_exp[0]) ||
@@ -736,7 +847,7 @@ if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
 	$display ("Simulation passed !");
-$finish;
+$stop;
 end 
 endmodule
 
@@ -810,6 +921,30 @@ begin
 	end
 	Clock14 = 1'b0;
 	Clock14 = #500000 1'b1;
+end 
+
+// Externo0
+initial
+begin
+	Externo0 = 1'b1;
+end 
+
+// Externo1
+initial
+begin
+	Externo1 = 1'b0;
+end 
+
+// Externo2
+initial
+begin
+	Externo2 = 1'b1;
+end 
+
+// Externo3
+initial
+begin
+	Externo3 = 1'b0;
 end 
 
 ARQ_Lab1_vlg_sample_tst tb_sample (

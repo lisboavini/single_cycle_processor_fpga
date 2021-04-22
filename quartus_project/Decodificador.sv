@@ -176,7 +176,7 @@ case(codigo_maquina2[16:12])
 	//A1 <= codigo_maquina2[3];
 	//B0 <= codigo_maquina2[0];
 	//B1 <= codigo_maquina2[1];
-	Mux_Imediato <= 1;
+	Mux_Imediato <= 0;
 	ALU1 <= 1;
 	ALU0 <= 1;
 	Cin <= 1;
@@ -188,7 +188,7 @@ case(codigo_maquina2[16:12])
 	Write_RAM <= 0;
 	Read_RAM <= 0;
 	endereco_dados <= 4'b0000;
-//	endereco_Salto <= 5'b00000;
+   endereco_Salto <= 5'b00000;
 	//Const_in <= codigo_maquina2[3:0];
 	end
 	
@@ -199,8 +199,8 @@ case(codigo_maquina2[16:12])
 	//A1 <= codigo_maquina2[3];
 	//B0 <= codigo_maquina2[0];
 	//B1 <= codigo_maquina2[1];
-	Mux_Imediato <= 1;
-	ALU1 <= 1;
+	Mux_Imediato <= 0;
+	ALU1 <= 0;
 	ALU0 <= 1;
 	Cin <= 1;
 	Mux_Memoria <= 0;
