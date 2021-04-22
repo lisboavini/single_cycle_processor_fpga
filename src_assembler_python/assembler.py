@@ -194,7 +194,7 @@ def create_output_binary(file_path):
                         output += '{0:04b}'.format(int(r1))
                         output += '{0:05b}'.format(0) # useless bits
         
-                elif line_clear == 'RST':
+                elif line_clear == 'RST' or line_clear == 'RST\n':
                     output += '{0:05b}'.format(7)
                     output += '{0:012b}'.format(0) # useless bits
                 
@@ -213,10 +213,10 @@ def create_output_binary(file_path):
 
     # exception treatment
     except OSError:
-        error_msg = ("\nError message: We have a problem oppenning your file, please verify path and file name and try again =)\nbin.txt file will be blank...")
+        error_msg = ("\nASSEMBLER MESSAGE: [ERROR] We have a problem oppenning your file, \nplease verify path and file name and try again =)\nbin.txt file will be blank...")
         return error_msg
     except TypeError:
-        error_msg = ("\nError message: Assembly language can't be interpreted, please verify the syntax and be happy ;)")
+        error_msg = ("\nASSEMBLER MESSAGE: [ERROR] Assembly language can't be interpreted, \nplease verify the syntax and be happy ;)")
         return error_msg
 
 #%% Section to open the input and output files   
