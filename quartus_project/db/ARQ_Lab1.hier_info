@@ -140,38 +140,38 @@ externo <= externo$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ARQ_Lab1|ALU:inst1
-S0 => always0~1.IN0
-S0 => always0~4.IN0
-S0 => always0~3.IN0
-S0 => always0~0.IN0
-S1 => always0~3.IN1
-S1 => always0~4.IN1
-S1 => always0~1.IN1
-S1 => always0~0.IN1
-Cin => G~15.OUTPUTSELECT
-Cin => G~16.OUTPUTSELECT
-Cin => G~17.OUTPUTSELECT
-Cin => G~18.OUTPUTSELECT
-Cin => G~19.OUTPUTSELECT
-Cin => G~20.OUTPUTSELECT
-Cin => G~21.OUTPUTSELECT
-Cin => G~22.OUTPUTSELECT
-Cin => Cout~0.OUTPUTSELECT
-Cin => G~23.OUTPUTSELECT
-Cin => G~24.OUTPUTSELECT
-Cin => G~25.OUTPUTSELECT
-Cin => G~26.OUTPUTSELECT
-Cin => N~0.OUTPUTSELECT
-Cin => Z~0.OUTPUTSELECT
-Cin => G~27.OUTPUTSELECT
-Cin => G~28.OUTPUTSELECT
-Cin => G~29.OUTPUTSELECT
-Cin => G~30.OUTPUTSELECT
-Cin => Z~3.OUTPUTSELECT
-Cin => N~3.OUTPUTSELECT
+S0 => always0.IN0
+S0 => always0.IN0
+S0 => always0.IN0
+S0 => always0.IN0
+S1 => always0.IN1
+S1 => always0.IN1
+S1 => always0.IN1
+S1 => always0.IN1
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => Cout.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => N.OUTPUTSELECT
+Cin => Z.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => G.OUTPUTSELECT
+Cin => Z.OUTPUTSELECT
+Cin => N.OUTPUTSELECT
 A[0] => Add0.IN8
 A[0] => Add1.IN4
-A[0] => G~21.DATAB
+A[0] => G.DATAB
 A[0] => Add2.IN8
 A[0] => LessThan0.IN4
 A[0] => Add3.IN8
@@ -179,55 +179,55 @@ A[0] => Equal1.IN0
 A[0] => Equal2.IN3
 A[1] => Add0.IN7
 A[1] => Add1.IN3
-A[1] => G~20.DATAB
+A[1] => G.DATAB
 A[1] => Add2.IN7
 A[1] => LessThan0.IN3
-A[1] => G~26.DATAA
+A[1] => G.DATAA
 A[1] => Add3.IN7
 A[1] => Equal1.IN3
 A[1] => Equal2.IN2
 A[2] => Add0.IN6
 A[2] => Add1.IN2
-A[2] => G~19.DATAB
+A[2] => G.DATAB
 A[2] => Add2.IN6
 A[2] => LessThan0.IN2
-A[2] => G~25.DATAA
+A[2] => G.DATAA
 A[2] => Add3.IN6
 A[2] => Equal1.IN2
 A[2] => Equal2.IN1
 A[3] => Add0.IN5
 A[3] => Add1.IN1
-A[3] => always0~2.IN0
+A[3] => always0.IN0
 A[3] => Add2.IN5
 A[3] => LessThan0.IN1
-A[3] => G~24.DATAA
+A[3] => G.DATAA
 A[3] => Add3.IN5
 A[3] => Equal1.IN1
 A[3] => Equal2.IN0
-B[0] => G~18.DATAA
+B[0] => G.DATAA
 B[0] => Add1.IN8
 B[0] => LessThan0.IN8
 B[0] => Add2.IN4
-B[1] => G~17.DATAA
+B[1] => G.DATAA
 B[1] => Add1.IN7
 B[1] => LessThan0.IN7
 B[1] => Add2.IN3
-B[2] => G~16.DATAA
+B[2] => G.DATAA
 B[2] => Add1.IN6
 B[2] => LessThan0.IN6
 B[2] => Add2.IN2
-B[3] => G~15.DATAA
+B[3] => G.DATAA
 B[3] => Add1.IN5
-B[3] => always0~2.IN1
+B[3] => always0.IN1
 B[3] => LessThan0.IN5
 B[3] => Add2.IN1
-Cout <= Cout~1.DB_MAX_OUTPUT_PORT_TYPE
-Z <= Z~4.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
 G[0] <= G[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 G[1] <= G[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
 G[2] <= G[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 G[3] <= G[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-N <= N~4.DB_MAX_OUTPUT_PORT_TYPE
+N <= N.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ARQ_Lab1|Mux8x1:Mux_A
@@ -312,26 +312,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst6|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst2
@@ -370,26 +370,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst2|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst
@@ -428,26 +428,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst1
@@ -486,26 +486,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst1|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst5
@@ -544,26 +544,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst5|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst3
@@ -602,26 +602,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst3|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst4
@@ -660,26 +660,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst4|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|8_4_bits_registers:Register
@@ -997,26 +997,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|BUSMUX:Data_Extern|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|BUSMUX:MDSelect
@@ -1055,26 +1055,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|BUSMUX:MDSelect|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Dados_16x4:Data_memory
@@ -1092,10 +1092,10 @@ endereco[3] => RAM.WADDR3
 endereco[3] => RAM.RADDR3
 write => RAM.we_a.DATAIN
 write => RAM.WE
-read => dado_out[0]~0.OE
-read => dado_out[1]~1.OE
-read => dado_out[2]~2.OE
-read => dado_out[3]~3.OE
+read => dado_out[0].OE
+read => dado_out[1].OE
+read => dado_out[2].OE
+read => dado_out[3].OE
 dado_in[0] => RAM.data_a[0].DATAIN
 dado_in[0] => RAM.DATAIN
 dado_in[1] => RAM.data_a[1].DATAIN
@@ -1114,10 +1114,10 @@ clock => RAM.data_a[2].CLK
 clock => RAM.data_a[1].CLK
 clock => RAM.data_a[0].CLK
 clock => RAM.CLK0
-dado_out[0] <= dado_out[0]~0.DB_MAX_OUTPUT_PORT_TYPE
-dado_out[1] <= dado_out[1]~1.DB_MAX_OUTPUT_PORT_TYPE
-dado_out[2] <= dado_out[2]~2.DB_MAX_OUTPUT_PORT_TYPE
-dado_out[3] <= dado_out[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+dado_out[0] <= dado_out[0].DB_MAX_OUTPUT_PORT_TYPE
+dado_out[1] <= dado_out[1].DB_MAX_OUTPUT_PORT_TYPE
+dado_out[2] <= dado_out[2].DB_MAX_OUTPUT_PORT_TYPE
+dado_out[3] <= dado_out[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ARQ_Lab1|BUSMUX:MBSelect
@@ -1156,26 +1156,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|BUSMUX:MBSelect|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_B
@@ -1260,26 +1260,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst6|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst2
@@ -1318,26 +1318,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst2|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst
@@ -1376,26 +1376,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst1
@@ -1434,26 +1434,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst1|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst5
@@ -1492,26 +1492,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst5|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst3
@@ -1550,26 +1550,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst3|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst4
@@ -1608,26 +1608,26 @@ result[3] <= mux_omc:auto_generated.result[3]
 
 
 |ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst4|lpm_mux:$00000|mux_omc:auto_generated
-data[0] => result_node[0]~7.IN1
-data[1] => result_node[1]~5.IN1
-data[2] => result_node[2]~3.IN1
-data[3] => result_node[3]~1.IN1
-data[4] => result_node[0]~6.IN1
-data[5] => result_node[1]~4.IN1
-data[6] => result_node[2]~2.IN1
-data[7] => result_node[3]~0.IN1
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[0].IN1
+data[5] => result_node[1].IN1
+data[6] => result_node[2].IN1
+data[7] => result_node[3].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3]~0.IN0
-sel[0] => _~0.IN0
-sel[0] => result_node[2]~2.IN0
-sel[0] => _~1.IN0
-sel[0] => result_node[1]~4.IN0
-sel[0] => _~2.IN0
-sel[0] => result_node[0]~6.IN0
-sel[0] => _~3.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ARQ_Lab1|Instrucao_64x17:inst14

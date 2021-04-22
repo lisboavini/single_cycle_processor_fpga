@@ -3,41 +3,20 @@
 	<PROJECT NAME="ARQ_Lab1">
 		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst1|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_0" CBX_FILE_NAME="mux_k6d.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst3|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_1" CBX_FILE_NAME="mux_k6d.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_10" CBX_FILE_NAME="mux_k6d.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_9" CBX_FILE_NAME="mux_aqc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst4|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst3|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_11" CBX_FILE_NAME="mux_k6d.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_2" CBX_FILE_NAME="mux_k6d.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst5|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst4|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|BUSMUX:Data_Extern|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|BUSMUX:MBSelect|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Dados_16x4:Data_memory|lpm_mux:RAM_rtl_17" CBX_FILE_NAME="mux_joc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_12" CBX_FILE_NAME="mux_aqc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_3" CBX_FILE_NAME="mux_k6d.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst6|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst5|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Dados_16x4:Data_memory|lpm_mux:RAM_rtl_18" CBX_FILE_NAME="mux_joc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_13" CBX_FILE_NAME="mux_aqc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_4" CBX_FILE_NAME="mux_k6d.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst6|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|BUSMUX:MDSelect|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Dados_16x4:Data_memory|lpm_mux:RAM_rtl_19" CBX_FILE_NAME="mux_joc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Dados_16x4:Data_memory|lpm_mux:RAM_rtl_20" CBX_FILE_NAME="mux_joc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_14" CBX_FILE_NAME="mux_aqc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_5" CBX_FILE_NAME="mux_aqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst4|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_15" CBX_FILE_NAME="mux_k6d.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_6" CBX_FILE_NAME="mux_aqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst3|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst1|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst5|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst4|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_16" CBX_FILE_NAME="mux_aqc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_7" CBX_FILE_NAME="mux_k6d.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Instrucao_64x17:inst14|lpm_mux:RAM_rtl_8" CBX_FILE_NAME="mux_k6d.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|BUSMUX:Data_Extern|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|BUSMUX:MBSelect|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_A|BUSMUX:inst6|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ARQ_Lab1|Mux8x1:Mux_B|BUSMUX:inst5|lpm_mux:$00000" CBX_FILE_NAME="mux_omc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
