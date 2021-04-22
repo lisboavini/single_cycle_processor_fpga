@@ -74,7 +74,7 @@ def create_output_binary(file_path):
                         if line_clear.count(',') > 1: # checks for a second comma
                             r2 = data.split(',')[2] # anything after the second comma is r2
                     # if has an instruction with a single register, clear cases
-                    elif data == 'R0':
+                    else:
                         r0 = data
 
                     # Start output string construction.

@@ -1,0 +1,11 @@
+movi r2, 2
+addi r1,r2,2
+addi r2, 3
+clr r2
+jmp 0x8
+storem r1,0x0
+loadm r2, 0x0
+addi r5,12
+dec r2,r1
+inc r1,r1
+rst

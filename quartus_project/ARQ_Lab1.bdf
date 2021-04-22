@@ -51,6 +51,7 @@ applicable agreement for further details.
 	)
 	(flipy)
 	(text "VCC" (rect 20 7 40 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 496 1160 552 1176))
 )
 (pin
 	(input)
@@ -68,6 +69,7 @@ applicable agreement for further details.
 	)
 	(flipy)
 	(text "VCC" (rect 20 7 40 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 496 1192 552 1208))
 )
 (pin
 	(input)
@@ -85,6 +87,7 @@ applicable agreement for further details.
 	)
 	(flipy)
 	(text "VCC" (rect 20 7 40 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 496 1224 552 1240))
 )
 (pin
 	(input)
@@ -102,6 +105,7 @@ applicable agreement for further details.
 	)
 	(flipy)
 	(text "VCC" (rect 20 7 40 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 488 1256 552 1272))
 )
 (pin
 	(input)
@@ -270,6 +274,22 @@ applicable agreement for further details.
 		(line (pt 4 78)(pt 8 82))
 	)
 	(rotate270)
+)
+(pin
+	(output)
+	(rect 208 520 384 536)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Clear" (rect 90 0 115 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
 	(rect 672 712 816 872)
@@ -2059,18 +2079,6 @@ applicable agreement for further details.
 	(pt -768 456)
 )
 (connector
-	(pt 72 568)
-	(pt -48 568)
-)
-(connector
-	(pt 72 568)
-	(pt 72 936)
-)
-(connector
-	(pt 72 936)
-	(pt 72 1072)
-)
-(connector
 	(pt 216 320)
 	(pt 208 320)
 )
@@ -2565,10 +2573,6 @@ applicable agreement for further details.
 	(pt 696 160)
 )
 (connector
-	(pt 208 320)
-	(pt 208 640)
-)
-(connector
 	(pt -152 640)
 	(pt 208 640)
 )
@@ -2765,10 +2769,6 @@ applicable agreement for further details.
 	(pt -40 328)
 )
 (connector
-	(pt -48 568)
-	(pt -48 328)
-)
-(connector
 	(pt -56 576)
 	(pt -56 312)
 )
@@ -2868,6 +2868,30 @@ applicable agreement for further details.
 	(pt 720 208)
 	(bus)
 )
+(connector
+	(pt 72 568)
+	(pt -48 568)
+)
+(connector
+	(pt -48 328)
+	(pt -48 568)
+)
+(connector
+	(pt 72 568)
+	(pt 72 936)
+)
+(connector
+	(pt 72 936)
+	(pt 72 1072)
+)
+(connector
+	(pt 208 320)
+	(pt 208 528)
+)
+(connector
+	(pt 208 528)
+	(pt 208 640)
+)
 (junction (pt 456 1216))
 (junction (pt 456 1184))
 (junction (pt 456 1152))
@@ -2893,3 +2917,4 @@ applicable agreement for further details.
 (junction (pt 376 176))
 (junction (pt 392 192))
 (junction (pt 408 208))
+(junction (pt 208 528))

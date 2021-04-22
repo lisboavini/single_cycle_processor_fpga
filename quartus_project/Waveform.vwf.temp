@@ -26,7 +26,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 20000.0;
+	DATA_DURATION = 10000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 1.0;
@@ -423,6 +423,86 @@ SIGNAL("Externo3")
 	PARENT = "";
 }
 
+SIGNAL("Enderecoteste")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 6;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Enderecoteste[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Enderecoteste";
+}
+
+SIGNAL("Enderecoteste[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Enderecoteste";
+}
+
+SIGNAL("Enderecoteste[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Enderecoteste";
+}
+
+SIGNAL("Enderecoteste[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Enderecoteste";
+}
+
+SIGNAL("Enderecoteste[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Enderecoteste";
+}
+
+SIGNAL("Enderecoteste[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Enderecoteste";
+}
+
+SIGNAL("Clear")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
 TRANSITION_LIST("Clock")
 {
 	NODE
@@ -431,7 +511,7 @@ TRANSITION_LIST("Clock")
 		LEVEL 1 FOR 10.0;
 		NODE
 		{
-			REPEAT = 19;
+			REPEAT = 9;
 			LEVEL 0 FOR 500.0;
 			LEVEL 1 FOR 500.0;
 		}
@@ -445,15 +525,15 @@ TRANSITION_LIST("Clock14")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 50.0;
+		LEVEL 1 FOR 400.0;
 		NODE
 		{
-			REPEAT = 19;
+			REPEAT = 9;
 			LEVEL 0 FOR 500.0;
 			LEVEL 1 FOR 500.0;
 		}
 		LEVEL 0 FOR 500.0;
-		LEVEL 1 FOR 450.0;
+		LEVEL 1 FOR 100.0;
 	}
 }
 
@@ -463,7 +543,7 @@ TRANSITION_LIST("Instrucao[16]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -473,7 +553,7 @@ TRANSITION_LIST("Instrucao[15]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -483,7 +563,7 @@ TRANSITION_LIST("Instrucao[14]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -493,7 +573,7 @@ TRANSITION_LIST("Instrucao[13]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -503,7 +583,7 @@ TRANSITION_LIST("Instrucao[12]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -513,7 +593,7 @@ TRANSITION_LIST("Instrucao[11]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -523,7 +603,7 @@ TRANSITION_LIST("Instrucao[10]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -533,7 +613,7 @@ TRANSITION_LIST("Instrucao[9]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -543,7 +623,7 @@ TRANSITION_LIST("Instrucao[8]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -553,7 +633,7 @@ TRANSITION_LIST("Instrucao[7]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -563,7 +643,7 @@ TRANSITION_LIST("Instrucao[6]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -573,7 +653,7 @@ TRANSITION_LIST("Instrucao[5]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -583,7 +663,7 @@ TRANSITION_LIST("Instrucao[4]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -593,7 +673,7 @@ TRANSITION_LIST("Instrucao[3]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -603,7 +683,7 @@ TRANSITION_LIST("Instrucao[2]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -613,7 +693,7 @@ TRANSITION_LIST("Instrucao[1]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -623,7 +703,7 @@ TRANSITION_LIST("Instrucao[0]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -633,7 +713,7 @@ TRANSITION_LIST("R0[3]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -643,7 +723,7 @@ TRANSITION_LIST("R0[2]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -653,7 +733,7 @@ TRANSITION_LIST("R0[1]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -663,7 +743,7 @@ TRANSITION_LIST("R0[0]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -673,7 +753,7 @@ TRANSITION_LIST("R1[3]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -683,7 +763,7 @@ TRANSITION_LIST("R1[2]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -693,7 +773,7 @@ TRANSITION_LIST("R1[1]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -703,7 +783,7 @@ TRANSITION_LIST("R1[0]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -713,7 +793,7 @@ TRANSITION_LIST("R2[3]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -723,7 +803,7 @@ TRANSITION_LIST("R2[2]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -733,7 +813,7 @@ TRANSITION_LIST("R2[1]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -743,7 +823,7 @@ TRANSITION_LIST("R2[0]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 19001.0;
+		LEVEL 0 FOR 9001.0;
 	}
 }
 
@@ -752,7 +832,7 @@ TRANSITION_LIST("Externo0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 20000.0;
+		LEVEL 1 FOR 10000.0;
 	}
 }
 
@@ -761,7 +841,7 @@ TRANSITION_LIST("Externo1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20000.0;
+		LEVEL 0 FOR 10000.0;
 	}
 }
 
@@ -770,7 +850,7 @@ TRANSITION_LIST("Externo2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 20000.0;
+		LEVEL 1 FOR 10000.0;
 	}
 }
 
@@ -779,7 +859,70 @@ TRANSITION_LIST("Externo3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20000.0;
+		LEVEL 0 FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Enderecoteste[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Enderecoteste[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Enderecoteste[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Enderecoteste[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Enderecoteste[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Enderecoteste[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Clear")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
 	}
 }
 
@@ -1164,6 +1307,85 @@ DISPLAY_LINE
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Enderecoteste";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 39;
+	TREE_LEVEL = 0;
+	CHILDREN = 40, 41, 42, 43, 44, 45;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Enderecoteste[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 40;
+	TREE_LEVEL = 1;
+	PARENT = 39;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Enderecoteste[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 41;
+	TREE_LEVEL = 1;
+	PARENT = 39;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Enderecoteste[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 42;
+	TREE_LEVEL = 1;
+	PARENT = 39;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Enderecoteste[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 43;
+	TREE_LEVEL = 1;
+	PARENT = 39;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Enderecoteste[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 44;
+	TREE_LEVEL = 1;
+	PARENT = 39;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Enderecoteste[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 45;
+	TREE_LEVEL = 1;
+	PARENT = 39;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Clear";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 46;
 	TREE_LEVEL = 0;
 }
 
