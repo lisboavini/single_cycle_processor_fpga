@@ -78,4 +78,28 @@ set_location_assignment PIN_N26 -to Externo1
 set_location_assignment PIN_P25 -to Externo2
 set_location_assignment PIN_AE14 -to Externo3
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Daniel Ribeiro/Documents/GitHub/single_cycle_processor_fpga/quartus_project/Waveform.vwf"
+set_location_assignment PIN_AF14 -to Clock
+set_location_assignment PIN_AD13 -to Clock14
+set_location_assignment PIN_AE23 -to R0[0]
+set_location_assignment PIN_AF23 -to R0[1]
+set_location_assignment PIN_AB21 -to R0[2]
+set_location_assignment PIN_AC22 -to R0[3]
+set_location_assignment PIN_AD22 -to R1[0]
+set_location_assignment PIN_AD23 -to R1[1]
+set_location_assignment PIN_AD21 -to R1[2]
+set_location_assignment PIN_AC21 -to R1[3]
+set_location_assignment PIN_AA14 -to R2[0]
+set_location_assignment PIN_Y13 -to R2[1]
+set_location_assignment PIN_AA13 -to R2[2]
+set_location_assignment PIN_AC14 -to R2[3]
+set_location_assignment PIN_AD15 -to R3[0]
+set_location_assignment PIN_AE15 -to R3[1]
+set_location_assignment PIN_AF13 -to R3[2]
+set_location_assignment PIN_AE13 -to R3[3]
+set_location_assignment PIN_AE22 -to Enderecoteste[0]
+set_location_assignment PIN_AF22 -to Enderecoteste[1]
+set_location_assignment PIN_U17 -to Enderecoteste[5]
+set_location_assignment PIN_U18 -to Enderecoteste[4]
+set_location_assignment PIN_V18 -to Enderecoteste[3]
+set_location_assignment PIN_W19 -to Enderecoteste[2]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

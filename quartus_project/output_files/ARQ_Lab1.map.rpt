@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ARQ_Lab1
-Thu Apr 22 19:06:57 2021
+Fri Apr 23 09:18:14 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -62,16 +62,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 22 19:06:57 2021           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 23 09:18:14 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ARQ_Lab1                                        ;
 ; Top-level Entity Name              ; ARQ_Lab1                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 131                                             ;
-;     Total combinational functions  ; 123                                             ;
-;     Dedicated logic registers      ; 28                                              ;
-; Total registers                    ; 28                                              ;
-; Total pins                         ; 46                                              ;
+; Total logic elements               ; 178                                             ;
+;     Total combinational functions  ; 165                                             ;
+;     Dedicated logic registers      ; 36                                              ;
+; Total registers                    ; 36                                              ;
+; Total pins                         ; 50                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -209,28 +209,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+---------------------------------+
 ; Resource                                    ; Usage                           ;
 +---------------------------------------------+---------------------------------+
-; Estimated Total logic elements              ; 131                             ;
+; Estimated Total logic elements              ; 178                             ;
 ;                                             ;                                 ;
-; Total combinational functions               ; 123                             ;
+; Total combinational functions               ; 165                             ;
 ; Logic element usage by number of LUT inputs ;                                 ;
-;     -- 4 input functions                    ; 58                              ;
-;     -- 3 input functions                    ; 39                              ;
-;     -- <=2 input functions                  ; 26                              ;
+;     -- 4 input functions                    ; 83                              ;
+;     -- 3 input functions                    ; 61                              ;
+;     -- <=2 input functions                  ; 21                              ;
 ;                                             ;                                 ;
 ; Logic elements by mode                      ;                                 ;
-;     -- normal mode                          ; 112                             ;
+;     -- normal mode                          ; 154                             ;
 ;     -- arithmetic mode                      ; 11                              ;
 ;                                             ;                                 ;
-; Total registers                             ; 28                              ;
-;     -- Dedicated logic registers            ; 28                              ;
+; Total registers                             ; 36                              ;
+;     -- Dedicated logic registers            ; 36                              ;
 ;     -- I/O registers                        ; 0                               ;
 ;                                             ;                                 ;
-; I/O pins                                    ; 46                              ;
+; I/O pins                                    ; 50                              ;
 ; Embedded Multiplier 9-bit elements          ; 0                               ;
-; Maximum fan-out node                        ; PC:inst16|endereco_instrucao[4] ;
-; Maximum fan-out                             ; 17                              ;
-; Total fan-out                               ; 499                             ;
-; Average fan-out                             ; 2.53                            ;
+; Maximum fan-out node                        ; PC:inst16|endereco_instrucao[1] ;
+; Maximum fan-out                             ; 21                              ;
+; Total fan-out                               ; 686                             ;
+; Average fan-out                             ; 2.73                            ;
 +---------------------------------------------+---------------------------------+
 
 
@@ -239,94 +239,146 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Library Name ;
 +--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
-; |ARQ_Lab1                            ; 123 (0)           ; 28 (3)       ; 0           ; 0            ; 0       ; 0         ; 46   ; 0            ; |ARQ_Lab1                                                                 ; work         ;
-;    |8_3AND:inst4|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|8_3AND:inst4                                                    ; work         ;
-;    |8_4_bits_registers:Register|     ; 0 (0)             ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|8_4_bits_registers:Register                                     ; work         ;
+; |ARQ_Lab1                            ; 165 (0)           ; 36 (4)       ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |ARQ_Lab1                                                                 ; work         ;
+;    |8_3AND:inst4|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|8_3AND:inst4                                                    ; work         ;
+;    |8_4_bits_registers:Register|     ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|8_4_bits_registers:Register                                     ; work         ;
 ;       |Registrador_4_bits:inst20|    ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|8_4_bits_registers:Register|Registrador_4_bits:inst20           ; work         ;
 ;       |Registrador_4_bits:inst3|     ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|8_4_bits_registers:Register|Registrador_4_bits:inst3            ; work         ;
+;       |Registrador_4_bits:inst4|     ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|8_4_bits_registers:Register|Registrador_4_bits:inst4            ; work         ;
 ;       |Registrador_4_bits:inst|      ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|8_4_bits_registers:Register|Registrador_4_bits:inst             ; work         ;
-;    |ALU:inst1|                       ; 46 (46)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|ALU:inst1                                                       ; work         ;
-;    |Decodificador:inst|              ; 27 (27)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Decodificador:inst                                              ; work         ;
+;    |ALU:inst1|                       ; 45 (45)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|ALU:inst1                                                       ; work         ;
+;    |Decodificador:inst|              ; 61 (61)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Decodificador:inst                                              ; work         ;
 ;    |Instrucao_64x17:inst14|          ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Instrucao_64x17:inst14                                          ; work         ;
-;    |Mux8x1:Mux_A|                    ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Mux8x1:Mux_A                                                    ; work         ;
-;       |busmux:inst6|                 ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Mux8x1:Mux_A|busmux:inst6                                       ; work         ;
-;          |lpm_mux:$00000|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Mux8x1:Mux_A|busmux:inst6|lpm_mux:$00000                        ; work         ;
-;             |mux_omc:auto_generated| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Mux8x1:Mux_A|busmux:inst6|lpm_mux:$00000|mux_omc:auto_generated ; work         ;
-;    |PC:inst16|                       ; 20 (20)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|PC:inst16                                                       ; work         ;
+;    |Mux8x1:Mux_A|                    ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Mux8x1:Mux_A                                                    ; work         ;
+;       |busmux:inst6|                 ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Mux8x1:Mux_A|busmux:inst6                                       ; work         ;
+;          |lpm_mux:$00000|            ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Mux8x1:Mux_A|busmux:inst6|lpm_mux:$00000                        ; work         ;
+;             |mux_omc:auto_generated| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|Mux8x1:Mux_A|busmux:inst6|lpm_mux:$00000|mux_omc:auto_generated ; work         ;
+;    |PC:inst16|                       ; 20 (20)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|PC:inst16                                                       ; work         ;
 ;    |busmux:Data_Extern|              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|busmux:Data_Extern                                              ; work         ;
 ;       |lpm_mux:$00000|               ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|busmux:Data_Extern|lpm_mux:$00000                               ; work         ;
 ;          |mux_omc:auto_generated|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|busmux:Data_Extern|lpm_mux:$00000|mux_omc:auto_generated        ; work         ;
-;    |busmux:MBSelect|                 ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|busmux:MBSelect                                                 ; work         ;
-;       |lpm_mux:$00000|               ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|busmux:MBSelect|lpm_mux:$00000                                  ; work         ;
-;          |mux_omc:auto_generated|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|busmux:MBSelect|lpm_mux:$00000|mux_omc:auto_generated           ; work         ;
+;    |busmux:MBSelect|                 ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|busmux:MBSelect                                                 ; work         ;
+;       |lpm_mux:$00000|               ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|busmux:MBSelect|lpm_mux:$00000                                  ; work         ;
+;          |mux_omc:auto_generated|    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ARQ_Lab1|busmux:MBSelect|lpm_mux:$00000|mux_omc:auto_generated           ; work         ;
 +--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                          ;
-+-----------------------------------------------------+-------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal           ; Free of Timing Hazards ;
-+-----------------------------------------------------+-------------------------------+------------------------+
-; Decodificador:inst|Enable_Write                     ; Decodificador:inst|WideOr13   ; yes                    ;
-; Decodificador:inst|clear                            ; Decodificador:inst|WideOr13   ; yes                    ;
-; Decodificador:inst|A2                               ; Decodificador:inst|Selector19 ; yes                    ;
-; Decodificador:inst|Cin                              ; Decodificador:inst|WideOr13   ; yes                    ;
-; Decodificador:inst|Mux_Imediato                     ; Decodificador:inst|WideOr13   ; yes                    ;
-; Decodificador:inst|ALU0                             ; Decodificador:inst|WideOr13   ; yes                    ;
-; Decodificador:inst|ALU1                             ; Decodificador:inst|WideOr13   ; yes                    ;
-; Decodificador:inst|Const_in[1]                      ; Decodificador:inst|Selector23 ; yes                    ;
-; Decodificador:inst|Const_in[0]                      ; Decodificador:inst|Selector23 ; yes                    ;
-; Decodificador:inst|Mux_Memoria                      ; Decodificador:inst|WideOr13   ; yes                    ;
-; Decodificador:inst|externo                          ; Decodificador:inst|WideOr13   ; yes                    ;
-; Decodificador:inst|Write_Pc                         ; Decodificador:inst|WideOr13   ; yes                    ;
-; Decodificador:inst|S1                               ; Decodificador:inst|WideOr0    ; yes                    ;
-; Decodificador:inst|S0                               ; Decodificador:inst|WideOr0    ; yes                    ;
-; Number of user-specified and inferred latches = 14  ;                               ;                        ;
-+-----------------------------------------------------+-------------------------------+------------------------+
++------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                        ;
++-----------------------------------------------------+-----------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal         ; Free of Timing Hazards ;
++-----------------------------------------------------+-----------------------------+------------------------+
+; Decodificador:inst|Enable_Write                     ; Decodificador:inst|WideOr13 ; yes                    ;
+; Decodificador:inst|clear                            ; Decodificador:inst|WideOr13 ; yes                    ;
+; Decodificador:inst|Cin                              ; Decodificador:inst|WideOr13 ; yes                    ;
+; Decodificador:inst|ALU0                             ; Decodificador:inst|WideOr13 ; yes                    ;
+; Decodificador:inst|ALU1                             ; Decodificador:inst|WideOr13 ; yes                    ;
+; Decodificador:inst|Mux_Imediato                     ; Decodificador:inst|WideOr13 ; yes                    ;
+; Decodificador:inst|B1                               ; Decodificador:inst|WideOr27 ; yes                    ;
+; Decodificador:inst|B0                               ; Decodificador:inst|WideOr27 ; yes                    ;
+; Decodificador:inst|B2                               ; Decodificador:inst|WideOr27 ; yes                    ;
+; Decodificador:inst|A1                               ; Decodificador:inst|WideOr21 ; yes                    ;
+; Decodificador:inst|A0                               ; Decodificador:inst|WideOr21 ; yes                    ;
+; Decodificador:inst|Const_in[2]                      ; Decodificador:inst|WideOr20 ; yes                    ;
+; Decodificador:inst|Const_in[0]                      ; Decodificador:inst|WideOr20 ; yes                    ;
+; Decodificador:inst|endereco_dados[2]                ; Decodificador:inst|WideOr24 ; yes                    ;
+; Decodificador:inst|endereco_dados[0]                ; Decodificador:inst|WideOr24 ; yes                    ;
+; Decodificador:inst|Mux_Memoria                      ; Decodificador:inst|WideOr13 ; yes                    ;
+; Decodificador:inst|externo                          ; Decodificador:inst|WideOr13 ; yes                    ;
+; Decodificador:inst|Write_Pc                         ; Decodificador:inst|WideOr13 ; yes                    ;
+; Decodificador:inst|endereco_Salto[4]                ; Decodificador:inst|WideOr25 ; yes                    ;
+; Decodificador:inst|endereco_Salto[3]                ; Decodificador:inst|WideOr25 ; yes                    ;
+; Decodificador:inst|endereco_Salto[1]                ; Decodificador:inst|WideOr25 ; yes                    ;
+; Decodificador:inst|Write_RAM                        ; Decodificador:inst|WideOr13 ; yes                    ;
+; Decodificador:inst|S2                               ; Decodificador:inst|WideOr0  ; yes                    ;
+; Decodificador:inst|S1                               ; Decodificador:inst|WideOr0  ; yes                    ;
+; Decodificador:inst|S0                               ; Decodificador:inst|WideOr0  ; yes                    ;
+; Number of user-specified and inferred latches = 25  ;                             ;                        ;
++-----------------------------------------------------+-----------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                  ;
-+------------------------------------------------------------+----------------------------------------+
-; Register name                                              ; Reason for Removal                     ;
-+------------------------------------------------------------+----------------------------------------+
-; PC:inst16|auxiliar2[1,2,5]                                 ; Stuck at GND due to stuck port data_in ;
-; inst15                                                     ; Lost fanout                            ;
-; PC:inst16|auxiliar2[0,3,4]                                 ; Stuck at GND due to stuck port data_in ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst4|inst6 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst6 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst6 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst6 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst4|inst5 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst5 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst5 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst5 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst4|inst4 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst4 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst4 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst4 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst4|inst9 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst9 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst9 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst9 ; Lost fanout                            ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst6 ; Stuck at GND due to stuck port clock   ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst5 ; Stuck at GND due to stuck port clock   ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst4 ; Stuck at GND due to stuck port clock   ;
-; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst9 ; Stuck at GND due to stuck port clock   ;
-; Total Number of Removed Registers = 27                     ;                                        ;
-+------------------------------------------------------------+----------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                       ;
++------------------------------------------------------------+---------------------------------------------+
+; Register name                                              ; Reason for Removal                          ;
++------------------------------------------------------------+---------------------------------------------+
+; PC:inst16|auxiliar2[0,2,5]                                 ; Stuck at GND due to stuck port data_in      ;
+; Dados_16x4:Data_memory|RAM~8                               ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~9                               ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~10                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~11                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~12                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~13                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~14                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~15                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~24                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~25                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~26                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~27                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~28                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~29                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~30                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~31                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~19                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~7                               ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~23                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~6                               ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~18                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~22                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~17                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~5                               ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~21                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~4                               ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~16                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~20                              ; Lost fanout                                 ;
+; Dados_16x4:Data_memory|RAM~3                               ; Stuck at GND due to stuck port clock_enable ;
+; Dados_16x4:Data_memory|RAM~2                               ; Stuck at GND due to stuck port clock_enable ;
+; Dados_16x4:Data_memory|RAM~1                               ; Stuck at GND due to stuck port clock_enable ;
+; Dados_16x4:Data_memory|RAM~0                               ; Stuck at GND due to stuck port clock_enable ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst6 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst6 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst6 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst6 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst5 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst5 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst5 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst5 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst4 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst4 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst4 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst4 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst9 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst9 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst9 ; Stuck at GND due to stuck port clock        ;
+; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst9 ; Stuck at GND due to stuck port clock        ;
+; Total Number of Removed Registers = 51                     ;                                             ;
++------------------------------------------------------------+---------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                       ;
-+------------------------------------------------------------+-------------------------+------------------------------------------------------------+
-; Register name                                              ; Reason for Removal      ; Registers Removed due to This Register                     ;
-+------------------------------------------------------------+-------------------------+------------------------------------------------------------+
-; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst6 ; Stuck at GND            ; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst4 ;
-;                                                            ; due to stuck port clock ;                                                            ;
-+------------------------------------------------------------+-------------------------+------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                 ;
++------------------------------+--------------------------------+-------------------------------------------------------------+
+; Register name                ; Reason for Removal             ; Registers Removed due to This Register                      ;
++------------------------------+--------------------------------+-------------------------------------------------------------+
+; Dados_16x4:Data_memory|RAM~3 ; Stuck at GND                   ; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst6, ;
+;                              ; due to stuck port clock_enable ; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst6, ;
+;                              ;                                ; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst6, ;
+;                              ;                                ; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst6  ;
+; Dados_16x4:Data_memory|RAM~2 ; Stuck at GND                   ; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst5, ;
+;                              ; due to stuck port clock_enable ; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst5, ;
+;                              ;                                ; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst5, ;
+;                              ;                                ; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst5  ;
+; Dados_16x4:Data_memory|RAM~1 ; Stuck at GND                   ; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst4, ;
+;                              ; due to stuck port clock_enable ; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst4, ;
+;                              ;                                ; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst4, ;
+;                              ;                                ; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst4  ;
+; Dados_16x4:Data_memory|RAM~0 ; Stuck at GND                   ; 8_4_bits_registers:Register|Registrador_4_bits:inst6|inst9, ;
+;                              ; due to stuck port clock_enable ; 8_4_bits_registers:Register|Registrador_4_bits:inst7|inst9, ;
+;                              ;                                ; 8_4_bits_registers:Register|Registrador_4_bits:inst5|inst9, ;
+;                              ;                                ; 8_4_bits_registers:Register|Registrador_4_bits:inst8|inst9  ;
++------------------------------+--------------------------------+-------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -334,12 +386,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 28    ;
+; Total registers                              ; 36    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 12    ;
+; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 3     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -349,10 +401,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |ARQ_Lab1|PC:inst16|endereco[2]                                                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ARQ_Lab1|busmux:MBSelect|lpm_mux:$00000|mux_omc:auto_generated|result_node[2]           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |ARQ_Lab1|PC:inst16|endereco[2]                                                          ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |ARQ_Lab1|PC:inst16|endereco[1]                                                          ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ARQ_Lab1|busmux:Data_Extern|lpm_mux:$00000|mux_omc:auto_generated|result_node[3]        ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |ARQ_Lab1|Mux8x1:Mux_A|busmux:inst6|lpm_mux:$00000|mux_omc:auto_generated|result_node[3] ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |ARQ_Lab1|Mux8x1:Mux_A|busmux:inst6|lpm_mux:$00000|mux_omc:auto_generated|result_node[1] ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ARQ_Lab1|busmux:MBSelect|lpm_mux:$00000|mux_omc:auto_generated|result_node[3]           ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |ARQ_Lab1|ALU:inst1|G[2]                                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 
@@ -532,7 +585,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -542,7 +595,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 22 19:06:54 2021
+    Info: Processing started: Fri Apr 23 09:18:12 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ARQ_Lab1 -c ARQ_Lab1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file arq_lab1.bdf
@@ -656,7 +709,7 @@ Info (12128): Elaborating entity "8_bit_demux" for hierarchy "8_bit_demux:inst3"
 Info (12128): Elaborating entity "4_bits_demux" for hierarchy "8_bit_demux:inst3|4_bits_demux:insasdasdasdt"
 Info (12128): Elaborating entity "Dados_16x4" for hierarchy "Dados_16x4:Data_memory"
 Info (12128): Elaborating entity "Instrucao_64x17" for hierarchy "Instrucao_64x17:inst14"
-Warning (10850): Verilog HDL warning at Memoria_Instrucao.sv(9): number of words (10) in memory file does not match the number of elements in the address range [0:64]
+Warning (10850): Verilog HDL warning at Memoria_Instrucao.sv(9): number of words (6) in memory file does not match the number of elements in the address range [0:64]
 Warning (10030): Net "RAM.data_a" at Memoria_Instrucao.sv(7) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "RAM.waddr_a" at Memoria_Instrucao.sv(7) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "RAM.we_a" at Memoria_Instrucao.sv(7) has no driver or initial value, using a default initial value '0'
@@ -678,53 +731,68 @@ Warning (14026): LATCH primitive "ALU:inst1|G[1]" is permanently enabled
 Warning (14026): LATCH primitive "ALU:inst1|G[2]" is permanently enabled
 Warning (14026): LATCH primitive "ALU:inst1|G[3]" is permanently enabled
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "Decodificador:inst|Write_Pc" merged with LATCH primitive "Decodificador:inst|clear"
-    Info (13026): Duplicate LATCH primitive "Decodificador:inst|externo" merged with LATCH primitive "Decodificador:inst|Mux_Memoria"
+    Info (13026): Duplicate LATCH primitive "Decodificador:inst|B2" merged with LATCH primitive "Decodificador:inst|B0"
 Warning (13012): Latch Decodificador:inst|Enable_Write has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[5]
 Warning (13012): Latch Decodificador:inst|clear has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[5]
-Warning (13012): Latch Decodificador:inst|A2 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[5]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
 Warning (13012): Latch Decodificador:inst|Cin has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[5]
-Warning (13012): Latch Decodificador:inst|Mux_Imediato has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[5]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
 Warning (13012): Latch Decodificador:inst|ALU0 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[5]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
 Warning (13012): Latch Decodificador:inst|ALU1 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[5]
-Warning (13012): Latch Decodificador:inst|Const_in[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[5]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|Mux_Imediato has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|B1 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[1]
+Warning (13012): Latch Decodificador:inst|B0 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|A1 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|A0 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|Const_in[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
 Warning (13012): Latch Decodificador:inst|Const_in[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[5]
 Warning (13012): Latch Decodificador:inst|Mux_Memoria has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[5]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|externo has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|Write_Pc has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|endereco_Salto[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|endereco_Salto[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|endereco_Salto[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[1]
+Warning (13012): Latch Decodificador:inst|Write_RAM has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
+Warning (13012): Latch Decodificador:inst|S2 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
 Warning (13012): Latch Decodificador:inst|S1 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[4]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
 Warning (13012): Latch Decodificador:inst|S0 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[4]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PC:inst16|endereco_instrucao[0]
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Instrucao[15]" is stuck at GND
     Warning (13410): Pin "Instrucao[11]" is stuck at GND
     Warning (13410): Pin "Instrucao[8]" is stuck at GND
-    Warning (13410): Pin "Instrucao[7]" is stuck at GND
-    Warning (13410): Pin "Instrucao[4]" is stuck at GND
+    Warning (13410): Pin "Instrucao[6]" is stuck at GND
     Warning (13410): Pin "Instrucao[3]" is stuck at GND
-    Warning (13410): Pin "Instrucao[2]" is stuck at GND
     Warning (13410): Pin "Instrucao[1]" is stuck at GND
-    Warning (13410): Pin "Instrucao[0]" is stuck at GND
-Info (17049): 17 registers lost all their fanouts during netlist optimizations.
+Info (17049): 28 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 182 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 236 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 40 output pins
-    Info (21061): Implemented 136 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 78 warnings
-    Info: Peak virtual memory: 4598 megabytes
-    Info: Processing ended: Thu Apr 22 19:06:57 2021
-    Info: Elapsed time: 00:00:03
+    Info (21059): Implemented 44 output pins
+    Info (21061): Implemented 186 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 94 warnings
+    Info: Peak virtual memory: 4609 megabytes
+    Info: Processing ended: Fri Apr 23 09:18:14 2021
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 
 
