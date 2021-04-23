@@ -34,6 +34,7 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -1120 1080 -1056 1096))
 )
 (pin
 	(input)
@@ -122,6 +123,7 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -368 1080 -304 1096))
 )
 (pin
 	(output)
@@ -290,6 +292,23 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+)
+(pin
+	(output)
+	(rect 416 224 432 400)
+	(text "OUTPUT" (rect 0 1 10 39)(font "Arial" (font_size 6))(vertical))
+	(text "R3[3..0]" (rect 0 90 12 130)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 8 0)(pt 8 52))
+		(line (pt 4 52)(pt 4 78))
+		(line (pt 12 52)(pt 12 78))
+		(line (pt 12 52)(pt 4 52))
+		(line (pt 4 78)(pt 8 82))
+		(line (pt 8 82)(pt 12 78))
+		(line (pt 12 78)(pt 8 82))
+	)
+	(flipy_rotate90)
 )
 (symbol
 	(rect 672 712 816 872)
@@ -2183,16 +2202,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 368 224)
-	(pt 496 224)
-	(bus)
-)
-(connector
-	(pt 496 224)
-	(pt 720 224)
-	(bus)
-)
-(connector
 	(pt 368 240)
 	(pt 488 240)
 	(bus)
@@ -2892,6 +2901,21 @@ applicable agreement for further details.
 	(pt 208 528)
 	(pt 208 640)
 )
+(connector
+	(pt 368 224)
+	(pt 424 224)
+	(bus)
+)
+(connector
+	(pt 424 224)
+	(pt 496 224)
+	(bus)
+)
+(connector
+	(pt 496 224)
+	(pt 720 224)
+	(bus)
+)
 (junction (pt 456 1216))
 (junction (pt 456 1184))
 (junction (pt 456 1152))
@@ -2918,3 +2942,4 @@ applicable agreement for further details.
 (junction (pt 392 192))
 (junction (pt 408 208))
 (junction (pt 208 528))
+(junction (pt 424 224))
